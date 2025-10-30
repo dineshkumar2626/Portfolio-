@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dinesh Kumar — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">DK</div>
+        <div>
+          <h1>Dinesh Kumar</h1>
+          <p class="muted">Computer Science — GCE SALEM</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="container hero-grid">
+        <div>
+          <h2>Hello — I'm <span class="accent">Dinesh</span></h2>
+          <p class="lead">A CSE student at GCE SALEM passionate about web development, embedded systems, and data structures. I build simple, clean projects that solve real problems.</p>
+          <div class="cta-row">
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
+          </div>
+          <ul class="meta-list">
+            <li><strong>College:</strong> GCE SALEM</li>
+            <li><strong>Department:</strong> CSE</li>
+            <li><strong>Location:</strong> Salem, India</li>
+          </ul>
+        </div>
+        <aside class="card profile-card">
+          <div class="avatar-large">DK</div>
+          <h3>Dinesh Kumar</h3>
+          <p class="muted">CSE, GCE SALEM</p>
+          <p class="small">I'm currently studying computer science and learning full-stack web development, embedded systems, and algorithms. Open to internships and collaborative projects.</p>
+          <div class="skill-badges">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C/C++</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="container" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Web</h4>
+          <p>HTML, CSS, JavaScript (ES6+), Responsive Design</p>
+        </div>
+        <div class="skill">
+          <h4>Programming</h4>
+          <p>C, C++, Data Structures & Algorithms</p>
+        </div>
+        <div class="skill">
+          <h4>Tools</h4>
+          <p>Git, VS Code, Chrome DevTools</p>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Project One</h3>
+          <p class="muted">Personal website / To-do app / Sensor interface</p>
+          <p>Technologies: HTML, CSS, JS</p>
+          <a class="link" href="#">View details</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Two</h3>
+          <p class="muted">Embedded system project with sensors</p>
+          <p>Technologies: C/C++, Microcontrollers</p>
+          <a class="link" href="#">View details</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Three</h3>
+          <p class="muted">Data structures implementation</p>
+          <p>Technologies: C++, Algorithms</p>
+          <a class="link" href="#">View details</a>
+        </article>
+      </div>
+    </section>
+    <section class="container" id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to reach out, email me at <a href="mailto:dinesh@example.com">dinesh@example.com</a>.</p>
+      <form id="contactForm" class="contact-form" onsubmit="return handleSubmit(event)">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="email" id="email" placeholder="Your email" required>
+        <textarea id="message" rows="4" placeholder="Message" required></textarea>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Dinesh Kumar — GCE SALEM</p>
+      <div class="social">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
